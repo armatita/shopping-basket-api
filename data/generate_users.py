@@ -27,7 +27,8 @@ SOFTWARE.
 # retrieve information from it. This includes things like: Most sold item, 
 # Number of items that were added to the basket (including purchases), Number of
 # items that were removed, Most removed item, etc. However, this is NOT an API.
-# It's meant to generate data for testing the proper API.
+# It's meant to generate data for testing the proper API (use shobo.py for the
+# real thing).
 #################################################################################
 
 # Generic libraries
