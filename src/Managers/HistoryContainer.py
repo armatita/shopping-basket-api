@@ -28,6 +28,10 @@ from typing import Dict, Tuple, List, Any
 
 
 class Operation:
+    """
+    An `Operation` is the descriptor for the characteristics of an
+    Added, Removed, and Purchased action (from the shopping basket).
+    """
     Id: str = None
     Name: str = None
     Price: float = None
@@ -44,6 +48,9 @@ class Operation:
 
 
 class HistoryContainer:
+    """
+    The `HistoryContainer` stores all operations perfomed by a user (as in a timeline).
+    """
     _history: List[Operation] = None
     def __init__(self, history: Dict[str, Tuple[str, float, bool, bool, str]]) -> None:
         self._buildHistoryFromDictionary(history)

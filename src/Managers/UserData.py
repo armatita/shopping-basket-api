@@ -29,10 +29,13 @@ import json
 # Local libraries
 from .CommonVariables import *
 from .HistoryContainer import HistoryContainer
-from .Properties import Properties
 
 
 class User:
+    """
+    `User` is a public class from which you can make direct queries to the
+    respective user. It can be obtained from the `DataManager`.
+    """
     _id: str = None
     _first_name: str = None
     _last_name: str = None
@@ -87,6 +90,9 @@ class User:
 
     
 class UserData:
+    """
+    `UserData` is a container of user information, including its history.
+    """
     _id: str = None
     _first_name: str = None
     _last_name: str = None
